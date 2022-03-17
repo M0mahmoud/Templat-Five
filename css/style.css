@@ -598,5 +598,9 @@ footer > p{
     transform: translateY(0);
   }
 }
-
+@media  (max-width: 767px){
+  body{
+    animation: none;
+  }
+}
 /* 10 hr for done 💙*/
