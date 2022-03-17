@@ -567,7 +567,7 @@ footer > p{
 }
 
 @media (max-width: 1200px) {
-  .landing .text h1 span{
+  .landing .text h1 .span-animation{
     animation: none;
   }
 }
@@ -598,9 +598,5 @@ footer > p{
     transform: translateY(0);
   }
 }
-@media  (max-width: 767px){
-  .landing .text h1 span{
-    animation: none;
-  }
-}
+
 /* 10 hr for done 💙*/
