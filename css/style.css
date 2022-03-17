@@ -599,7 +599,7 @@ footer > p{
   }
 }
 @media  (max-width: 767px){
-  body{
+  .landing .text h1 span{
     animation: none;
   }
 }
