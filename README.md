@@ -1,3 +1,3 @@
-## Template => HTML | CSS | JS :heart:
+# Template [ HTML | CSS | JS ]💙
 
-![design 💙 ] (https://raw.githubusercontent.com/M0mahmoud/Templat-Five/main/template.jpeg)
+![design](/template.jpeg)
