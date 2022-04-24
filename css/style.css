@@ -58,8 +58,8 @@ ul {
 /* To Top */
 .totop {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: var(--first-color);
   right: 10px;
@@ -82,8 +82,8 @@ ul {
 .totop::before {
   position: absolute;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   right: 0px;
   box-sizing: border-box;
