@@ -23,7 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-color: #eee; */
 }
-a {
+:any-link{
   text-decoration: none;
 }
 ul {
@@ -113,6 +113,7 @@ ul {
 /* header */
 header {
   position: relative;
+  overflow: hidden;
 }
 header .container {
   position: relative;
@@ -204,13 +205,15 @@ header .container a:hover .upDown{
 
 /* landing */
 .landing img {
-  margin-top: 5px;
+  margin-top: 30px;
   width: 600px;
   color: #fdcb35;
   animation: imguptodown 2s ease-in-out infinite ;
   animation-delay: 0.5s;
 }
 .landing {
+  overflow: hidden;
+
   position: relative;
 }
 .landing .container {
@@ -286,6 +289,8 @@ header .container a:hover .upDown{
   margin-right: 70px;
 }
 .about {
+  overflow: hidden;
+
   margin-bottom: var(--main-margin);
   margin: var(--main-margin);
 }
@@ -334,6 +339,8 @@ header .container a:hover .upDown{
   margin-right: 70px;
 }
 .about_2 {
+  overflow: hidden;
+
   margin-bottom: var(--main-margin);
   margin: var(--main-margin);
 }
@@ -364,7 +371,7 @@ header .container a:hover .upDown{
     order: 2;
   }
   .about_2 img{
-    order: 1;
+    order: 2;
   }
   .about_2 .container {
     flex-direction: column;
@@ -380,6 +387,9 @@ header .container a:hover .upDown{
   }
 }
 /*  services*/
+.services{
+  overflow: hidden;
+}
 .services h1 {
   font-size: 35px;
   color: var(--title-color);
@@ -433,11 +443,15 @@ header .container a:hover .upDown{
   transition: var(--main-transition);
 }
 /* Watch time*/
+.time{
+  overflow: hidden;
+}
 svg {
   width: 10px;
 }
 .time img {
   width: 600px;
+  height: auto;
 }
 .time .container {
   display: flex;
@@ -501,6 +515,9 @@ svg {
   }
 }
 /*  */
+.contact{
+  overflow: hidden;
+}
 .contact .container {
   display: flex;
   justify-content: space-between;
@@ -532,7 +549,7 @@ svg {
 .contact a {
   padding: var(--main-padding);
   background-color: var(--first-color);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--title-color);
   border-radius: 45px;
@@ -551,7 +568,8 @@ svg {
 /* foooter */
 footer{
   background-color: #fee59a;
-    padding: 70px 0 0;
+  padding: 70px 0 0;
+  overflow: hidden;
 }
 footer .container{
   display: grid;
@@ -584,6 +602,7 @@ footer .box a{
   margin-bottom: 50px;
   font-size: 25px;
 }
+
 footer .box a svg{
   width: 25px;
 }
@@ -596,11 +615,14 @@ footer .box a:nth-child(2){
 footer .box a:last-child{
   fill: #4267B2 ;
 }
+footer .box a[aria-hidden=true] {
+  display:none;
+}
 @media (max-width: 767px){
   footer .box a{
     display: flex;
-    align-items: self-start;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 footer > p{
@@ -693,4 +715,9 @@ footer > p{
   font-weight: bold;
   margin-bottom: 15px;
   color: var(--first-color);
+}
+@media(max-width:400px){
+  .landing img{
+    animation: none;
+  }
 }
