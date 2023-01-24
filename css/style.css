@@ -402,7 +402,7 @@ header .container a:hover .upDown {
   align-items: center;
   background-color: var(--main-color);
   box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 15%);
-  border-radius: 11px;
+  border-radius: 15px;
   background-image: linear-gradient(
     to right bottom,
     var(--first-color),
@@ -470,6 +470,7 @@ header .container a:hover .upDown {
 .form .container .image_container {
   width: 35%;
   height: 100%;
+  padding: 10px;
 }
 .form .container .image {
   mix-blend-mode: multiply;
@@ -477,6 +478,7 @@ header .container a:hover .upDown {
   width: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
 }
 /* CLIENTS */
 .clients {
