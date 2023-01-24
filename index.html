@@ -41,14 +41,27 @@
     </style>
   </head>
   <body>
+    <div class="overlay" id="overlay">
+      <ul class="links">
+        <li><a href="#home" id="">Home</a></li>
+        <li><a href="#About" id="">About Us</a></li>
+        <li><a href="#Services" id="">Services</a></li>
+        <li><a href="#Contact" id="">Contact US</a></li>
+        <a href="#" class="order-now"
+          >Order Now <span class="upDown">!</span></a
+        >
+      </ul>
+    </div>
     <div class="totop">
       <ion-icon name="arrow-up-outline"></ion-icon>
     </div>
-    <!-- header -->
     <header>
       <div class="container" id="container">
-        <!-- <a href="#" class="logo"> Delivery</a> -->
-        <ul>
+        <a href="#" class="logo"> Delivery</a>
+        <div class="links-container">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <ul class="links">
           <li><a href="#home" id="">Home</a></li>
           <li><a href="#About" id="">About Us</a></li>
           <li><a href="#Services" id="">Services</a></li>
@@ -59,7 +72,6 @@
         >
       </div>
     </header>
-    <!-- landing -->
     <div class="landing" id="home">
       <div class="container">
         <div class="text">
@@ -158,7 +170,41 @@
         </div>
       </div>
     </div>
-    <!-- Numbers -->
+    <div class="form">
+      <div class="container">
+        <div class="inputs">
+          <h2>Get your first meal for free!</h2>
+          <p>
+            Order your favorite foods at any time and we will deliver them right
+            to where you are.
+          </p>
+          <form action="">
+            <div>
+              <label for="full_Name">full Name</label>
+              <input type="text" placeholder="Mahmoud Mohamed" id="full_Name" />
+            </div>
+            <div>
+              <label for="email_F">Email</label>
+              <input type="email" placeholder="name@test.com" id="email_F" />
+            </div>
+            <div>
+              <label for="location">Where did you hear from us?</label>
+              <select id="location">
+                <option value="friends">Friends and family</option>
+                <option value="youtube">YouTube video</option>
+                <option value="ad">Facebook ads</option>
+                <option value="podcast">Podcast</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <button type="button" class="btn--form">Sign Up Now</button>
+          </form>
+        </div>
+        <div class="image_container">
+          <img src="./imgs/form_delivery.jpg" alt="Delivery" class="image" />
+        </div>
+      </div>
+    </div>
     <div class="clients">
       <h2>Our Awesome Stats</h2>
       <div class="container">
@@ -176,6 +222,11 @@
           <!-- <i class="fas fa-money-bill-alt fa-2x fa-fw"></i> -->
           <p class="text">Momey</p>
           <span class="number" data-goal="500"></span><span>K</span>
+        </div>
+        <div class="box">
+          <!-- <i class="fas fa-code fa-2x fa-fw"></i> -->
+          <p class="text">Orders</p>
+          <span class="number" data-goal="150"></span><span>K</span>
         </div>
       </div>
     </div>

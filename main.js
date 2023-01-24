@@ -1,4 +1,7 @@
-//Start ==>to number
+let btnLinks = document.querySelector("header .links-container");
+let overlay = document.getElementById("overlay");
+let overlayLinks = document.querySelectorAll(".overlay ul li");
+
 let stat = document.querySelectorAll(".clients .box .number");
 let section = document.querySelector(".clients");
 let start = false;
@@ -25,6 +28,7 @@ toTop.addEventListener("click", () => {
   });
 });
 
+//Start ==>To Max Number
 function count(el) {
   let goal = el.dataset.goal;
   let counter = setInterval(() => {
@@ -32,6 +36,15 @@ function count(el) {
     if (el.textContent == goal) {
       clearInterval(counter);
     }
-  },[ 2000 / goal]);
+  }, [2000 / goal]);
 }
-//End ==>To Max Number
+
+// Links & Overlay
+btnLinks.addEventListener("click", () => {
+  overlay.classList.toggle("show");
+});
+overlayLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    overlay.classList.toggle("show");
+  });
+});
