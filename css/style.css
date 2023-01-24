@@ -829,7 +829,7 @@ footer > p {
     flex-direction: column;
   }
   .landing img {
-    width: 450px;
+    width: 420px;
     height: auto;
   }
   .landing .text p {
@@ -884,7 +884,7 @@ footer > p {
     margin-right: 10px;
   }
   .time img {
-    width: 500px;
+    width: 300px;
   }
   .time .text .links a {
     font-size: 15px;
